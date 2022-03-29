@@ -30,10 +30,7 @@
 
 import UIKit
 
-// Airba Change 1
-
 @objc public protocol OTPFieldViewDelegate: class {
-    
     func shouldBecomeFirstResponderForOTP(otpTextFieldIndex index: Int) -> Bool
     func enteredOTP(otp: String)
     func hasEnteredAllOTP(hasEnteredAll: Bool) -> Bool
@@ -54,11 +51,8 @@ import UIKit
     case alphaNumeric
 }
 
-@objc public class OTPFieldView: UIView {
-    
+@objc public class  OTPFieldView: UIView {
     /// Different display type for text fields.
-    
-    
     public var displayType: DisplayType = .circular
     public var fieldsCount: Int = 4
     public var otpInputType: KeyboardType = .numeric
@@ -113,7 +107,7 @@ import UIKit
     
     fileprivate func getOTPField(forIndex index: Int) -> OTPTextField {
         let hasOddNumberOfFields = (fieldsCount % 2 == 1)
-        var fieldFrame = CGRect(x: 0, y: 0, width: fieldSize, height: fieldSize)
+        var fieldFrame = CGRect(x: 0, y: 0, width: 30, height: fieldSize)
         
         if hasOddNumberOfFields {
             // Calculate from middle each fields x and y values so as to align the entire view in center

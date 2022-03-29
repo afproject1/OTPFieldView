@@ -82,6 +82,8 @@ import UIKit
         if #available(iOS 12.0, *) {
             textContentType = .oneTimeCode
         }
+        
+        textColor = .init(red: 98/255, green: 200/255, blue: 18/255, alpha: 1)
     }
     
     override func deleteBackward() {
