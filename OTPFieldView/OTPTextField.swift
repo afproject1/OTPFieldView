@@ -83,7 +83,7 @@ import UIKit
             textContentType = .oneTimeCode
         }
         
-        textColor = .init(red: 98/255, green: 200/255, blue: 18/255, alpha: 1)
+        textColor = .init(red: 124/255, green: 194/255, blue: 78/255, alpha: 1)
     }
     
     override func deleteBackward() {
